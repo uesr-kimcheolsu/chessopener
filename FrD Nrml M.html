@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="FrD Nrml.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>프렌치 디펜스: 노말 바리에이션 2...d5</h2>
+        <h3>French Defense: Normal Variation 2...d5</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu" marker-end="url(#Haccu)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line good" marker-end="url(#Hgood)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e6<br>
+        2. d4 d5
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 3번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" href="">
+            3. 🚫<br>이름<br>name<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백이 선택의 시간을 맞이했습니다. e폰이 공격받고 있으며 대응에 따라 3가지로 나뉘는데,
+        <ul>
+            <li>나이트로 지키는 3. Nc3/Nd2(메인 라인/타라시)</li>
+            <li>e폰을 미는 3. e5(어드밴스드)</li>
+            <li>e폰을 잡는 3. exd5(익스체인지)</li>
+        </ul>
+        이외의 수는 백이 이점을 잃는다고 평가받습니다.
+        <ul>
+            <li>3. f3: 카로 칸 디펜스에서는 판타지 바리에이션이라는 이름이 붙어 있으나
+                e6로 퀸의 킹사이드 대각선이 열려 있기 때문에
+                폰 교환 이후 4...Qh4+로 폰을 잃고 중앙이 약해집니다.
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+    </p></div>
+</div></body>
+
+</html>

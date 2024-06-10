@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>체스따개</h2>
+        <h3>Starting Position</h3>
+        <table>
+            <tr>
+                <th class="light"><img src="BR.svg"></th>
+                <th class="dark"><img src="BN.svg"></th>
+                <th class="light"><img src="BB.svg"></th>
+                <th class="dark"><img src="BQ.svg"></th>
+                <th class="light"></th>
+                <th class="dark"><img src="BB.svg"></th>
+                <th class="light"><img src="BN.svg"></th>
+                <th class="dark"><img src="BR.svg"></th>
+            </tr>
+            <tr>
+                <th class="dark"><img src="B.svg"></th>
+                <th class="light"><img src="B.svg"></th>
+                <th class="dark"><img src="B.svg"></th>
+                <th class="light"><img src="B.svg"></th>
+                <th class="dark"><img src="B.svg"></th>
+                <th class="light"><img src="B.svg"></th>
+                <th class="dark"><img src="B.svg"></th>
+                <th class="light"><img src="B.svg"></th>
+            </tr>
+            <tr>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+            </tr>
+            <tr>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+            </tr>
+            <tr>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+            </tr>
+            <tr>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+            </tr>
+            <tr>
+                <th class="light"><img src="W.svg"></th>
+                <th class="dark"><img src="W.svg"></th>
+                <th class="light"><img src="W.svg"></th>
+                <th class="dark"><img src="W.svg"></th>
+                <th class="light"><img src="W.svg"></th>
+                <th class="dark"><img src="W.svg"></th>
+                <th class="light"><img src="W.svg"></th>
+                <th class="dark"><img src="W.svg"></th>
+            </tr>
+            <tr>
+                <th class="dark"><img src="WR.svg"></th>
+                <th class="light"><img src="WN.svg"></th>
+                <th class="dark"><img src="WB.svg"></th>
+                <th class="light"><img src="WQ.svg"></th>
+                <th class="dark"></th>
+                <th class="light"><img src="WB.svg"></th>
+                <th class="dark"><img src="WN.svg"></th>
+                <th class="light"><img src="WR.svg"></th>
+            </tr>
+        </table>
+        <h4>킹을 올려놓고 탐색을 시작하십시오:</h4>
+    </div>
+
+    <div id="wall"></div>
+    
+    <div class="scroll"><p>
+        놓으라고:
+        <ul style="padding-left:20px;">
+            <li><a class="accu" href="Start.html">
+            0. K@e1 K@e8<br>
+            시작<br>
+            Start<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        체스따개는 웹에서 한국어로 작성된 체스 오프닝 사전을
+        찾기 어렵다는 이유로 제작되었습니다.
+        왜 체스따개라는 이름이 붙었냐고요?
+        can opener는 캔따개고
+        bottle opener는 병따개니
+        chess opener는 체스따개가 아닐까요?</p>
+        <p>
+        화면에서 왼쪽에는 체스보드가,
+        중앙에는 가능한 수의 목록이,
+        그리고 지금 읽고 있는 오른쪽에는 오프닝 이름의 유래나 여러 가지 아이디어, 또는 잡다한 사담 따위가 적히는 곳입니다.</p>
+        <p>
+        수 목록과 설명란은 각각 위아래로 스크롤할 수 있습니다.
+        글이 꽉 차 있다면 밑에 무엇이 적혀 있을지 기대해보세요.</p>
+        <p>
+        또한 가능한 수에는 색깔이 붙어 있습니다:
+        <ul>
+            <li class="accu"> 더 이상의 설명이 필요치 않을 정도로 당연한 정수나
+                상대의 잘못된 대응에 대한 탁월한 수, 즉 메인 라인은 청록색입니다.</li>
+            <li class="good"> 정수만큼은 아니지만, 둔 측이 나쁘지 않게 진행할 수 있는
+                사이드라인은 초록색입니다. 상대가 잘 모르는 라인으로 들어가서 실수를 유도하는 것도 종종 사용되는 방법이죠.
+                안 통하면 어쩌겠어요, 그래도 어찌저찌 무승부는 가능하겠죠.
+                함정 없이 빠른 전개로 상대 킹을 압박하는 갬빗이 간혹 포함되기도 합니다.</li>
+            <li class="tricky"> 상대가 잘못 대처했을 경우 크게 유리해지는 함정수는 노란색입니다.
+                초보자 티를 갓 벗었다면 오히려 걸려들기 쉬운 수이기도 하죠,
+                보통 언뜻 보면 괜찮은 전개수나 캐슬링 등이 실수가 될 테니까요.
+                그러나 실력이 올라가다 보면 걸려들지 않는 사람이 더 많아질 때가 옵니다.</li>
+            <li class="common"> 일반적으로 전략이 파훼되기 쉬운 수거나,
+                혹은 기존에 가지고 있던 이점을 상실하는 수들은 베이지색입니다.
+                크게 유리해질 가능성도 적으니, 이런 수 둘 바에 정수나 괜찮은 사이드라인 공부하는 게 더 효율이 좋습니다.
+                물론 대처법을 모르면 쉽게 동등해지기도 하지만, 그 정도면 좋은 사이드라인으로도 충분할 걸요.</li>
+            <li class="bad"> 함정에 제대로 빠져 버렸거나, 별 볼 일 없이 폰이나 기물을 내준다거나,
+                어쨌던 간에 크게 불리하게 작용하는 오프닝 실수들은 주홍색입니다.
+                이딴 수 두지 마세요, 꼭 똥인지 된장인지 찍어먹어봐야지만 알 수 있는 건 아니니까요.
+                역사에서 배운다는 말은 이런 개같은 수를 둔 사람들이 남긴 표식의 덕입니다.</li>
+            <li>색깔과 관계 없이 공인된 이름이 없는 수들은 *(별표)가 붙습니다. </li>
+        </ul></p>
+        <p>
+        통계의 기준은 리체스, 블리츠부터, 레이팅 1000-1600입니다.</p>
+        <p>
+        가능한 수의 순서는 이렇게 정해집니다:
+        <ul>
+            <li>청록색, 초록색, 노란색, 베이지색, 주홍색 순으로 정렬합니다</li>
+            <li>같은 등급의 수끼리는 통계에서 많이 두어진 순서대로 정렬합니다</li>
+            <li>가장 많이 두어진 수는 색과 관계 없이 가장 위에 작성됩니다</li>
+            <li>주홍색 수들은 표기법에 따라 정렬합니다</li>
+        </ul>
+        </p>
+            
+    </p></div>
+</div></body>
+
+</html>
+<!--
+    현 마스터 게임 총계 3,742,005
+-->

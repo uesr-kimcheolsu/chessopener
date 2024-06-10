@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="OpG KN M.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>이탈리안 게임</h2>
+        <h3>Italian Game</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu f8c5" marker-end="url(#Haccu)" x1="4.79" y1="0.21" x2="2.21" y2="2.79"></line>
+                <line class="line accu g8f6" marker-end="url(#Haccu)" x1="5.87" y1="0.27" x2="5.13" y2="1.73"></line>
+                <line class="line good" marker-end="url(#Hgood)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="WB.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e5<br>
+        2. Nf3 Nc6<br>
+        3. Bc4
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        흑의 3번째 수입니다:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.f8c5')" onmouseleave="Unsee('.f8c5')" href="GcPn.html">
+            3... Bc5<br>지우코 피아노<br>Giuoco Piano<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.g8f6')" onmouseleave="Unsee('.g8f6')" href="ItG 2ND.html">
+            3... Nf6<br>: 투 나이트 디펜스<br>: Two Knights Defense<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        이탈리안 게임은 초중급자 단계에서 오픈 게임을 대표하는 오프닝입니다. 각각의 수를 둔 이유가 명확하기 때문이죠:
+        <ul>
+            <li>백은 e4로 중앙을 장악</li>
+            <li>흑도 e5로 중앙을 장악</li>
+            <li>백은 나이트를 전개해 e5를 공격</li>
+            <li>흑도 나이트를 전개해 e5를 수비</li>
+            <li>백은 비숍을 전개해 캐슬링을 준비</li>
+        </ul></p>
+        <p>
+        흑의 메인 라인은 두 가지이며 이외의 수는 d4를 저지하지도,
+        e4를 공격하지도 않아 백의 d4 전진을 허용하여 중앙을 백에게 내주는 수입니다.
+        <ul>
+            <li>d4를 저지 : Bc4</li>
+            <li>e4를 공격 : Nf6</li>
+        </ul></p>
+        <p>
+        곧 d폰을 이용한 폰브레이크, 힘싸움이 시작될 것입니다.
+        이론이 적고 수의 의미가 명확하다 보니 초보자에게 처음으로 추천하는 오프닝이기도 합니다.
+        여기서 비숍을 한 칸 더 전진한 오프닝의 이름이 된 인물인 루이 로페즈 데 세구라는
+        이 오프닝이 루이 로페즈보다 별로라고 했다죠, 그러나 19세기 중반 오프닝 루이 로페즈의 재발견 전까지는
+        마스터 간의 경기에서도 가장 많이 쓰였습니다. 요새도 무승부를 유도할 수 있는 루이 로페즈를 회피하기 위해 많이 두어지는 편입니다.
+        </p>
+    </p></div>
+</div></body>
+
+</html>

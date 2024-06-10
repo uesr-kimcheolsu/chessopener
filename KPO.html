@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="Start.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>킹스 폰 오프닝</h2>
+        <h3>King's Pawn Opening</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu e7e5" marker-end="url(#Haccu)" x1="4" y1="1.3" x2="4" y2="2.7"></line>
+                <line class="line accu c7c5" marker-end="url(#Haccu)" x1="2" y1="1.3" x2="2" y2="2.7"></line>
+                <line class="line accu e7e6" marker-end="url(#Haccu)" x1="4" y1="1.3" x2="4" y2="1.7"></line>
+                <line class="line accu c7c6" marker-end="url(#Haccu)" x1="2" y1="1.3" x2="2" y2="1.7"></line>
+                <line class="line good d7d6" marker-end="url(#Hgood)" x1="3" y1="1.3" x2="3" y2="1.7"></line>
+                <line class="line good g7g6" marker-end="url(#Hgood)" x1="6" y1="1.3" x2="6" y2="2.7"></line>
+                <line class="line good d7d5" marker-end="url(#Hgood)" x1="3" y1="1.3" x2="3" y2="2.7"></line>
+                <line class="line good g8f6" marker-end="url(#Hgood)" x1="5.87" y1="0.27" x2="5.13" y2="1.73"></line>
+                <line class="line common b8c6" marker-end="url(#Hcommon)" x1="1.13" y1="0.27" x2="1.87" y2="1.73"></line>
+                <line class="line common b7b6" marker-end="url(#Hcommon)" x1="1" y1="1.3" x2="1" y2="1.7"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        흑의 가능한 대응입니다:
+        <ul style="padding-left:20px;">
+            <li><a class="accu" onmouseenter="See('.e7e5')" onmouseleave="Unsee('.e7e5')" href="OpG.html">
+            1... e5<br>오픈 게임<br>Open Game<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.c7c5')" onmouseleave="Unsee('.c7c5')" href="SclnD.html">
+            1... c5<br>시실리안 디펜스<br>Sicilian Defense<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.e7e6')" onmouseleave="Unsee('.e7e6')" href="FrD.html">
+            1... e6<br>프렌치 디펜스<br>French Defense<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.c7c6')" onmouseleave="Unsee('.c7c6')" href="CrKnnD.html">
+            1... c6<br>카로 칸 디펜스<br>Caro-Kann Defense<br><br></a></li>    
+            <li><a class="good" onmouseenter="See('.d7d6')" onmouseleave="Unsee('.d7d6')" href="">
+            1... d6🚫<br>피어츠 디펜스<br>Pirc Defense<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.g7g6')" onmouseleave="Unsee('.g7g6')" href="">
+            1... g6🚫<br>모던 디펜스(e폰)<br>Modern Defense with 1.e4<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.d7d5')" onmouseleave="Unsee('.d7d5')" href="">
+            1... d5🚫<br>스칸디나비안 디펜스<br>Scandinavian Defense<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.g8f6')" onmouseleave="Unsee('.g8f6')" href="">
+            1... Nf6🚫<br>알레킨 디펜스<br>Alekhine Defense<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.b8c6')" onmouseleave="Unsee('.b8c6')" href="">
+            1... Nc6🚫<br>님조비치 디펜스<br>Nimzowitsch Defense<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.b7b6')" onmouseleave="Unsee('.b7b6')" href="">
+            1... b6🚫<br>오웬 디펜스<br>Owen Defence<br><br></a></li>
+            <li><a class="bad" href="">
+            1... a6🚫<br>세인트 조지 디펜스(e폰)<br>St. George Defense with 1. e4<br><br></a></li>
+            <li><a class="bad" href="">
+            1... g5🚫<br>보그 디펜스<br>Borg Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... a5🚫<br>콘 스톡 디펜스<br>Corn Stalk Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... h6🚫<br>카 디펜스<br>Carr Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... f6🚫<br>반스 디펜스<br>Barnes Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... b5🚫<br>오닐 갬빗<br>O'Neill Gambit<br><br></a></li>
+            <li><a class="bad" href="">
+            1... Na6🚫<br>레밍 디펜스<br>Lemming Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... f5🚫<br>듀라스 갬빗<br>Důras Gambit<br><br></a></li>
+            <li><a class="bad" href="">
+            1... h5🚫<br>골드스미스 디펜스<br>Goldsith Defense<br><br></a></li>
+            <li><a class="bad" href="">
+            1... Nh6🚫<br>아담스 디펜스<br>Adams Defense<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        전체 게임 중 54%가 e4로 시작합니다.
+        백은 오프닝의 3원칙에 준수하여, e폰을 두 칸 밀어
+        <ul>
+            <li> 폰으로 e4 칸을 차지합니다.</li>
+            <li> 흑의 d5 전진을 저지합니다.</li>
+            <li> 퀸과 밝은 색 비숍의 대각선을 엽니다.</li>
+        </ul></p>
+        <p>
+        11대 세계 챔피언 바비 피셔는 "시험해본 결과 e4가 가장 좋다.(e4 is best by test)"라고 하였다죠,
+        그 말마따나 e4는 플레이어의 실력에 상관 없이 가장 인기 있는 첫 수로 꼽힙니다.</p>
+        
+        <p>
+        대체로 e4로 시작하는 오프닝들은 d4 계열보다 더 열린 포지션이고, 강제수와 전술적 상황이 많이 나오는 편입니다.
+        그 이유는 폰의 안전에 있는데, 
+        d폰은 퀸에 의해 지켜지고 그에 따라 이후 e4 계열의 오프닝에서 기물이 전개된 이후 d4/d5의 폰브레이크가 자주 일어나며,
+        이후 폰이 교환되며 열린 포지션이 많이 일어나는 편이지만
+        e폰은 전진했을 때 지키는 기물이 없어 상대의 기물과 d5/d4 폰에 의해 공격받기 때문에 e4/e5 폰브레이크가 잘 일어나지 않고,
+        폰 교환이 적어 주로 닫힌 포지션으로 진행됩니다.
+        일반적으로 초보자 단계에서는 닫힌 포지션에서의 기물의 좋은 위치와 공간적 이점보다
+        열린 포지션에서의 전개와 킹의 안전에 관한 이점을 이해하기 쉽기에
+        d4보다 e4를 먼저 배우게 됩니다.</p>
+
+        <p>
+        e4의 주 목표는 d5의 저지이나,
+        d폰은 퀸에 의해 지켜지기에 흑은 e4를 상관하지 않고 d5를 칠 수 있습니다.
+        다만 이후 흑 퀸을 백이 기물을 전개하며 쫓아내 전개 속도에서 우위를 가져갈 수 있어 선호되지는 않습니다.</p>
+
+        <p>
+        흑의 대응은 크게 4가지로 나뉩니다:
+        <ul>
+            <li> d4를 저지: e5, c5</li>
+            <li> d5를 준비: e6, c6</li>
+            <li> e4를 무시: d4</li>
+            <li> 전개를 우선: d6, g6, b6, Nf6 등</li>
+        </ul>
+        이 중 가장 위 5가지가 전체 킹스 폰 오프닝 중 95%를 차지합니다.</p>
+    </p></div>
+</div></body>
+
+</html>

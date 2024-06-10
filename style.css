@@ -1,0 +1,73 @@
+
+body {  background-color:black;
+        color:white;}
+a { color:white;
+    text-decoration:none;}
+.accu { color:#0ad;
+        fill:#0ad;
+        stroke:#0ad;}
+.good { color:#9d0;
+        fill:#9d0;
+        stroke:#9d0;}
+.common {color:#ba9;
+         fill:#ba9;
+         stroke:#ba9;}
+.tricky {color:#da0;
+         fill:#da0;
+         stroke:#da0;}
+.bad {  color:#d60;
+        fill:#d60;
+        stroke:#d60;}
+.dark {background-color:#865;}
+.light {background-color:#edb;}
+.darkx {background-color:#b95;}
+.lightx {background-color:#ed7;}
+.darkc {background-color:#b55;}
+.lightc {background-color:#e87;}
+.line { stroke-width: 0.15;
+        stroke-linecap: round;
+        opacity: 0.4;}
+h1 {border-bottom: 5px solid white;
+    padding: 15px;
+    padding-top: 0px;
+    margin: 0px;
+
+    font-size:80px;
+    text-align:center;}
+h2 {width: 350px;}
+.image1 {
+        position: absolute;
+        top: 170px;
+        left: 365px;
+        width: 50px;
+        height: 50px;}
+.scroll {
+height: calc(100vh - 159px);
+overflow-y: scroll;
+-ms-overflow-style: none;
+scrollbar-width: none;}
+.scroll::-webkit-scrollbar {display: none;}
+@media(max-width:747px) {
+    .scroll {height: calc(100vh - 265px);}
+    .image1 {top: 286px;}}
+table { table-layout: fixed;
+        width: 400px;
+        height: 400px;
+        border-collapse: collapse;}
+tr {height: 50px;}
+th {border: 0px solid black;
+    width: 48px;}
+th img {width: 50px;
+        height: 44px;
+        object-fit: cover;}
+body {margin: 10px;}
+
+#grid { display:grid;
+        grid-template-columns: 400px 25px 225px 25px 1fr;}
+@media(max-width:920px) {
+    #grid { display:grid;
+            grid-template-columns: 400px 25px 1fr 25px 1fr;}}
+#wall { background-color:white;
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+        padding-bottom: 600px;}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="GcPn CV M.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>지우코 피아노 : 센터 어택</h2>
+        <h3>Giuoco Piano : Center Attack</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu e5d4" marker-end="url(#Haccu)" x1="3.79" y1="3.21" x2="3.21" y2="3.79"></line>
+                <line class="line good" marker-end="url(#Hgood)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="darkx"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="darkx"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e5
+        2. Nf3 Nc6
+        3. Bc4 Bc5
+        4. c3 Nf6
+        5. d4
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        흑의 5번째 수입니다:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.e5d4')" onmouseleave="Unsee('.e5d4')" href="GcPn CntrA M.html">
+            5... exd4<br>, 메인 라인<br>, Main Line<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백은 폰과 비숍을 동시에 공격하며,
+        여기서 흑이 폰을 잡지 않으면 백에게 중앙을 빼앗깁니다.
+    </p></div>
+</div></body>
+
+</html>

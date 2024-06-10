@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+<title>체스따개ChessOpener</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script defer src="seeing.js"></script></head>
+
+<body>  <a href="ItG.html"><img src="back.svg" class="image1"></a>
+        <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>   <h2>이탈리안 게임: 투 나이트 디펜스</h2>
+            <h3>Italian Game: Two Knights Defense</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu" marker-end="url(#Haccu)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line good" marker-end="url(#Hgood)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="darkx"><img src="BN.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e5<br>
+        2. Nf3 Nc6<br>
+        3. Bc4 Nf6
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 4번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" href="">
+            4. 🚫<br>이름<br>name<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        이탈리안 게임의 대표적인 두 갈래 중 하나인 투 나이트 디펜스입니다.
+        지우코 피아노에 비해 개방적이고, 공격적이며, 강제수도 많아서 '모르면 맞아야지'의 표본이 되는 것이 십상이겠죠.</p>
+        <p>
+        포 나이트 게임에서도 같은 말을 하겠지만, 여기서 나이트를 전개하는 '포 나이트 이탈리안 게임'은
+        초중급자 단계에서 나오는 대표적인 오프닝 실수 중 하나입니다.</p>
+        <p>
+        이 오프닝만의 라인으로는 Ng5가 있습니다.
+        흑으로 진행했을 때 35% 확률로 뛰어드는 나이트를 볼 수 있게 됩니다.
+        물론 백에게는 d3를 두어 지우코 피아니시모로 전환할 수 있는 기회가 있고,
+        그렇기에 마스터간에서는 흑의 3번째 수가 별 상관이 없습니다.
+        웬만해선 둘 다 지우코 피아니시모가 되거든요.</p>
+    </p></div>
+</div></body></html>

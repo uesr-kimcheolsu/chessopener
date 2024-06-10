@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>체스따개</h2>
+        <h3>Starting Position</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu e2e4" marker-end="url(#Haccu)" x1="4" y1="5.7" x2="4" y2="4.3"></line>
+                <line class="line accu d2d4" marker-end="url(#Haccu)" x1="3" y1="5.7" x2="3" y2="4.3"></line>
+                <line class="line good c2c4" marker-end="url(#Hgood)" x1="2" y1="5.7" x2="2" y2="4.3"></line>
+                <line class="line good g1f3" marker-end="url(#Hgood)" x1="5.87" y1="6.73" x2="5.13" y2="5.27"></line>
+                <line class="line common g2g3" marker-end="url(#Hcommon)" x1="6" y1="5.7" x2="6" y2="5.3"></line>
+                <line class="line common b2b3" marker-end="url(#Hcommon)" x1="1" y1="5.7" x2="1" y2="5.3"></line>
+                <line class="line common f2f4" marker-end="url(#Hcommon)" x1="5" y1="5.7" x2="5" y2="4.3"></line>
+                <line class="line common b1c3" marker-end="url(#Hcommon)" x1="1.13" y1="6.73" x2="1.87" y2="5.27"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        0. K@e1 K@e8
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 첫 수입니다:
+        <ul style="padding-left:20px;">
+            <li><a class="accu" onmouseenter="See('.e2e4')" onmouseleave="Unsee('.e2e4')" href="KPO.html">
+            1. e4<br>킹스 폰 오프닝<br>King's Pawn Opening<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.d2d4')" onmouseleave="Unsee('.d2d4')" href="QPO.html">
+            1. d4<br>퀸스 폰 오프닝<br>Queen's Pawn Opening<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.c2c4')" onmouseleave="Unsee('.c2c4')" href="EngO.html">
+            1. c4<br>잉글리시 오프닝<br>English Opening<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.g1f3')" onmouseleave="Unsee('.g1f3')" href="RtO.html">
+            1. Nf3<br>레티 오프닝<br>Reti Opening<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.b1c3')" onmouseleave="Unsee('.b1c3')" href="">
+            1. Nc3🚫<br>판 헤이트 오프닝<br>Van Geet Opening<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.g2g3')" onmouseleave="Unsee('.g2g3')" href="">
+            1. g3🚫<br>킹스 피앙케토 오프닝<br>King's Fianchetto Opening<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.b2b3')" onmouseleave="Unsee('.b2b3')" href="">
+            1. b3🚫<br>님조 라슨 어택<br>Nimzo-Larsen Attack<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.f2f4')" onmouseleave="Unsee('.f2f4')" href="">
+            1. f4🚫<br>버드 오프닝<br>Bird's Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. a3🚫<br>안데르센 오프닝<br>Anderssen Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. a4🚫<br>웨어 오프닝<br>Ware Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. b4🚫<br>폴리시 오프닝<br>Polish Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. c3🚫<br>사라고사 오프닝<br>Saragossa Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. d3🚫<br>미세스 오프닝<br>Mieses Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. e3🚫<br>바넛 크뢰위스 오프닝<br>Van't Kruijs Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. f3🚫<br>반스 오프닝<br>Barnes Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. g4🚫<br>그롭 오프닝<br>Grob Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. h3🚫<br>클레멘즈 오프닝<br>Clemenz Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. h4🚫<br>카다스 오프닝<br>Kádas Opening<br><br></a></li>
+            <li><a class="bad" href="">
+            1. Na3🚫<br>소듐 어택<br>Sodium Attack<br><br></a></li>
+            <li><a class="bad" href="">
+            1. Nh3🚫<br>아마르 오프닝<br>Amar Opening<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <ul><li> 오프닝은 책처럼, <br>미들게임은 마법사처럼, <br>엔드게임은 기계처럼. -루돌프 스필만</li></ul>
+
+        <p>
+        체스에서 오프닝의 궁극적인 목적은 보다 유리한 미들게임으로 들어가는 것입니다.
+        오프닝에서 이점을 얻고, 그것을 미들게임에서 유지하며, 엔드게임에서는 지금껏 얻은 이점으로 승부를 보죠.</p>
+
+        <p>
+        다음은 오프닝의 3원칙과 이외 고려 대상입니다:
+        <ol>
+            <li> 기물을 효과적인 칸으로 전개해라 </li>
+            <li> 중앙을 장악해라 </li>
+            <li> 킹을 안전한 곳으로 피신시켜라(대개 캐슬링으로) </li>
+            <br>
+            <li> 폰 구조를 안정적으로 만들어라 </li>
+            <li> 자신의 영역을 확장해라 </li>
+            <li> 백은 자신이 먼저 둔다는 유리함을 유지하고 </li>
+            <li> 흑은 그것을 상쇄해라 </li>
+        </ol>
+            
+        규칙상 백은 첫 수로 20가지 중 하나를 선택할 수 있으나 이 중 이론적으로 타당한 수는 4개뿐입니다.
+        <ul>
+            <li> 폰을 한 칸만 올리는 것은 백선의 유리함을 상실합니다.</li>
+            <li> a4, b4, g4, h4, Na3, Nh3는 중앙에 영향력을 행사하지 못합니다. </li>
+            <li> f4는 중앙에 대한 영향력을 가지나 킹의 안전에 문제가 생깁니다. </li>
+            <li> Nc3는 c4 전진이 막히고, d5 전진을 막지 못하기에 중앙 영향력이 약합니다. </li>
+        </ul>
+
+        따라서 타당한 첫 수로는 c4, d4, e4, Nf3의 네 가지를 말하며
+        통계의 95%가 이 네 수 중 하나로 시작됩니다.</p>
+        <p>
+        그 다음으로는 중앙에 영향을 주는 f4와 Nc3,
+        비숍의 피앙케토를 준비하는 b3와 g3가 꼽힙니다.
+        다만 여기부터는 먼저 둔다는 유리함이 줄어드므로 초속기가 아닌 이상 추천하지는 않습니다.
+        </p>
+    </p></div>
+</div>
+
+</body>
+
+</html>
+<!--
+    현 마스터 게임 총계 3,742,356
+-->

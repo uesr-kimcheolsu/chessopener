@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="KPO.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>시실리안 디펜스</h2>
+        <h3>Sicilian Defense</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu g1f3" marker-end="url(#Haccu)" x1="5.87" y1="6.73" x2="5.13" y2="5.27"></line>
+                <line class="line accu b1c3" marker-end="url(#Haccu)" x1="1.13" y1="6.73" x2="1.87" y2="5.27"></line>
+                <line class="line good c2c3" marker-end="url(#Hgood)" x1="2" y1="5.7" x2="2" y2="5.3"></line>
+                <line class="line tricky d2d4" marker-end="url(#Htricky)" x1="3" y1="5.7" x2="3" y2="4.3"></line>
+                <line class="line common d2d3" marker-end="url(#Hcommon)" x1="3" y1="5.7" x2="3" y2="5.3"></line>
+                <line class="line common b2b3" marker-end="url(#Hcommon)" x1="1" y1="5.7" x2="1" y2="5.3"></line>
+                <line class="line common g1e2" marker-end="url(#Hcommon)" x1="5.73" y1="6.87" x2="4.27" y2="6.13"></line>
+                <line class="line common f2f4" marker-end="url(#Hcommon)" x1="5" y1="5.7" x2="5" y2="4.3"></line>
+                <line class="line common g2g3" marker-end="url(#Hcommon)" x1="6" y1="5.7" x2="6" y2="5.3"></line>
+                <line class="line common c2c4" marker-end="url(#Hcommon)" x1="2" y1="5.7" x2="2" y2="4.3"></line>
+                <line class="line tricky b2b4" marker-end="url(#Htricky)" x1="1" y1="5.7" x2="1" y2="4.3"></line>
+                <line class="line bad a2a3" marker-end="url(#Hbad)" x1="0" y1="5.7" x2="0" y2="5.3"></line>
+                <line class="line common f1e2" marker-end="url(#Hcommon)" x1="4.79" y1="6.79" x2="4.21" y2="6.21"></line>
+                <line class="line common f1c4" marker-end="url(#Hcommon)" x1="4.79" y1="6.79" x2="2.21" y2="4.21"></line>
+                <line class="line bad b1a3" marker-end="url(#Hbad)" x1="0.87" y1="6.73" x2="0.13" y2="5.27"></line>
+                <line class="line bad a2a4" marker-end="url(#Hbad)" x1="0" y1="5.7" x2="0" y2="4.3"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="darkx"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="darkx"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 c5
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 2번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.g1f3')" onmouseleave="Unsee('.g1f3')" href="SclnD2Nf3.html">
+            2. Nf3<br>당연한 수<br>Major Move<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.b1c3')" onmouseleave="Unsee('.b1c3')" href="ClsdScln.html">
+            2. Nc3<br>클로즈드<br>Closed<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.c2c3')" onmouseleave="Unsee('.c2c3')" href="SclnAlpn.html">
+            2. c3<br>알라핀<br>Alapin<br><br></a></li>
+            <li><a class="tricky" onmouseenter="See('.d2d4')" onmouseleave="Unsee('.d2d4')" href="">
+            2. d4🚫<br>스미스 모라 갬빗<br>Smith-Morra Gambit<br><br></a></li>
+            <li><a class="tricky" onmouseenter="See('.b2b4')" onmouseleave="Unsee('.b2b4')" href="">
+            2. b4🚫<br>윙 갬빗<br>Wing Gambit<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.f1c4')" onmouseleave="Unsee('.f1c4')" href="">
+            2. Bc4🚫<br>보우들러 어택<br>Bowdler Attack<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.f2f4')" onmouseleave="Unsee('.f2f4')" href="">
+            2. f4🚫<br>맥도넬 어택<br>McDonnel Attack<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.d2d3')" onmouseleave="Unsee('.d2d3')" href="">
+            2. d3🚫<br>-<br>NN<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.c2c4')" onmouseleave="Unsee('.c2c4')" href="">
+            2. c4🚫<br>: 코크란 바리에이션<br>: Cochrane Variation<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.b2b3')" onmouseleave="Unsee('.b2b3')" href="">
+            2. b3🚫<br>스나이더<br>Snyder<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.g1e2')" onmouseleave="Unsee('.g1e2')" href="SclnKrs.html">
+            2. Ne2<br>케레스<br>Keres<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.g2g3')" onmouseleave="Unsee('.g2g3')" href="">
+            2. g3🚫<br>라스커 듄 어택<br>Lasker-Dunne Attack<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.f1e2')" onmouseleave="Unsee('.f1e2')" href="">
+            2. Be2🚫<br>: 슬로우 바리에이션<br>: Slow Variation<br><br></a></li>
+            <li><a class="bad" onmouseenter="See('.a2a3')" onmouseleave="Unsee('.a2a3')" href="">
+            2. a3🚫<br>: 멩가리니 바리에이션<br>: Mengarini Variation<br><br></a></li>
+            <li><a class="bad" onmouseenter="See('.b1a3')" onmouseleave="Unsee('.b1a3')" href="">
+            2. Na3🚫<br>: 크론베르거 바리에이션<br>: Kronberger Variation<br><br></a></li>
+            <li><a class="bad" onmouseenter="See('.a2a4')" onmouseleave="Unsee('.a2a4')" href="">
+            2. a4🚫<br>마이어스 어택<br>Myers Attack<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        킹스 폰 오프닝 중 32%가 시실리안 디펜스를 선택합니다.</p>
+        <p>
+        이 오프닝은 마스터 간 통계에서 오픈 게임보다도 많이 플레이됩니다.
+        백은 넓은 영역과 전개 우위를 얻고,
+        흑은 유연한 폰 구조와 센터 투 폰을 얻습니다.
+        전개를 돕는 역할도 있는 e5와 달리 c5는 전개 목적의 수는 아니기 때문에
+        오픈 게임을 생각하고 두면 흑에게 이득될 것이 없습니다.</p>
+        <p>
+        시실리안 중에서도 유명한 것은 흑의 c폰과 백의 d폰이 교환되는 오픈 시실리안입니다.
+        오픈 시실리안은 10개의 하위분류로 나뉘고,
+        그 각각의 오프닝 중에 오픈 게임 전체만큼이나 연구가 이루어진 것도 있을 정도로
+        시실리안은 이론이 깊고 방대한 만큼 섣불리 쓰기는 어렵습니다.
+        만약 흑이 나는 배운 적 없는 시실리안을 꺼내들다면 오픈 시실리안이 아닌
+        알라핀, 클로즈드, 로솔리모/모스크바 등의 안티 시실리안 라인으로 들어가는 것이 낫겠네요!
+        그러니 하나 정도는 배워 두세요, 백으로 e4를 둔다면 언젠가는 만나게 될 테니까요.</p>
+        <p>
+        흑은 전개 관련 수를 두지 않았기 때문에 백에게는 조금의 여유가 있습니다.
+        그래서 같은 기물을 두 번 움직이거나 하는 사이드라인이 많죠.
+        </p>
+    </p></div>
+</div></body>
+
+</html>

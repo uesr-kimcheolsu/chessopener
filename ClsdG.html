@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="QPO.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>클로즈드 게임</h2>
+        <h3>Closed Game</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu c2c4" marker-end="url(#Haccu)" x1="2" y1="5.7" x2="2" y2="4.3"></line>
+                <line class="line good c1f4" marker-end="url(#Hgood)" x1="2.21" y1="6.79" x2="4.79" y2="4.21"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. d4 d5
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        수 쓰기:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.c2c4')" onmouseleave="Unsee('.c2c4')" href="QGbt.html">
+            2. c4<br>퀸스 갬빗<br>Gueen's Gambit<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.c1f4')" onmouseleave="Unsee('.c1f4')" href="">
+            2. Bf4🚫<br>: 런던 시스템<br>: London System<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        흑 또한 오프닝의 3원칙에 준수하여, d폰을 두 칸 밀어
+            <ul>
+                <li> 폰으로 d5 칸을 차지합니다.</li>
+                <li> 백의 e4 전진을 저지합니다.</li>
+                <li> 밝은 색 비숍의 대각선을 엽니다.</li>
+            </ul></p>
+        <p>
+        클로즈드 게임은 오픈 게임에 비해 전개가 느리고, 중앙이 닫히며, 기물의 재전개와 오프닝 간 전환이 자주 일어납니다.
+        흑의 다음 수로 게임 양상이 비교적 명확하게 정해지는 e4 계열과 달리 d4 계열은 폰 구조에 따라 이름이 달라지는데,
+        d4에 대응하는 가장 고전적인 수가 중앙을 양분하는 d5입니다.
+        백의 다음 수로는 80%가량이 c4이며, Nf3 이후 c4까지 포함하면 90%를 넘기에 사실상 정수로 불립니다.
+        초보자로 내려갈수록 Bf4의 런던 시스템이 늘어나기도 합니다.
+        </p>
+    </p></div>
+</div></body>
+
+</html>

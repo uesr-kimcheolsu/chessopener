@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="QGbt.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>퀸스 갬빗 거절</h2>
+        <h3>Queen's Gambit Declined</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu b1c3" marker-end="url(#Haccu)" x1="5.87" y1="6.73" x2="5.13" y2="5.27"></line>
+                <line class="line accu g1f3" marker-end="url(#Haccu)" x1="1.13" y1="6.73" x2="1.87" y2="5.27"></line>
+                <line class="line common c4d5" marker-end="url(#Hcommon)" x1="2.21" y1="3.79" x2="2.79" y2="3.21"></line>
+                <line class="line good g2g3" marker-end="url(#Hgood)" x1="6" y1="5.7" x2="6" y2="5.3"></line>
+                <line class="line common e2e3" marker-end="url(#Hcommon)" x1="4" y1="5.7" x2="4" y2="5.3"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="darkx"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. d4 d5<br>
+        2. c4 e6
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 3번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.b1c3')" onmouseleave="Unsee('.b1c3')" href="">
+            3. Nc3🚫<br>: 메인 라인<br>: Main Line<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.g1f3')" onmouseleave="Unsee('.g1f3')" href="">
+            3. Nf3🚫<br>-<br>NN<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.c4d5')" onmouseleave="Unsee('.c4d5')" href="">
+            3. cxd5🚫<br>-<br>NN<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.g2g3')" onmouseleave="Unsee('.g2g3')" href="">
+            3. g3🚫<br>-<br>NN<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.e2e3')" onmouseleave="Unsee('.e2e3')" href="">
+            3. e3🚫<br>-<br>NN<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        갬빗을 거절하는 것은 쉽습니다. 수락이 아니면 전부 거절이죠!
+        그러나 우리는 그냥 거절이 아닌, 좋은 거절을 원하죠.
+        e6는 퀸스 갬빗을 거절하는 가장 전통적인 수입니다.
+        d5 폰을 지키며 어두운 비숍의 길을 여는 수이지만,
+        그 대가로 밝은 색 비숍을 전개하기 힘들어집니다.
+        (이는 흑이 e6를 두는 대부분의 오프닝에서 두드러지는 단점입니다)</p>
+        <p>
+        오히려 마스터 레벨에서는 퀸스 갬빗 거절로 시작하는 경우가 드뭅니다.
+        3.Nc3 이후 백에서의 유용성이 입증되어 1...Nf6의 인디언 게임으로 주류를 바꿔버렸기 때문이죠.
+        더 정확히 말하자면, Nc3가 흑에게 나쁘지 않은 인디언 게임을 거쳐 퀸스 갬빗 거절로 전환하는 경우가 늘었습니다.
+        통계에서도 65%가 3.Nc3를 둡니다.</p>
+
+    </p></div>
+</div></body>
+
+</html>

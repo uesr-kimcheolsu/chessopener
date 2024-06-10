@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+<title>체스따개ChessOpener</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script defer src="seeing.js"></script></head>
+
+<body>  <a href=""><img src="back.svg" class="image1"></a>
+        <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>   <h2>이름</h2>
+            <h3>name</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu" marker-end="url(#Haccu)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line good" marker-end="url(#Hgood)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+        
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        의 번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" href="">
+            0. 🚫<br>이름<br>name<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        사담
+    </p></div>
+</div></body></html>
+<!--🚫
+onmouseenter="See('.')" onmouseleave="Unsee('.')" 
+-->

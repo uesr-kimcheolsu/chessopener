@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="ItG.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>지우코 피아노</h2>
+        <h3>Giuoco Piano</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu c2c3" marker-end="url(#Haccu)" x1="2" y1="5.7" x2="2" y2="5.3"></line>
+                <line class="line good e1h1" marker-end="url(#Hgood)" x1="4.3" y1="7" x2="6.2" y2="7"></line>
+                <line class="line good d2d3" marker-end="url(#Hgood)" x1="3" y1="5.7" x2="3" y2="5.3"></line>
+                <line class="line tricky b2b4" marker-end="url(#Htricky)" x1="1" y1="5.7" x2="1" y2="4.3"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="darkx"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="darkx"><img src="BB.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e5<br>
+        2. Nf3 Nc6<br>
+        3. Bc4 Bc5
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 4번째 수입니다:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.c2c3')" onmouseleave="Unsee('.c2c3')" href="GcPn CV.html">
+            4. c3<br>: 클래시컬 바리에이션<br>: Classical Variation<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.e1h1')" onmouseleave="Unsee('.e1h1')" href="">
+            4. O-O*🚫<br>: 콰이엇 라인*<br>: Quiet Line*<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.d2d3')" onmouseleave="Unsee('.d2d3')" href="">
+            4. d3🚫<br>: 지우코 피아니시모<br>: Giuoco Pianissimo<br><br></a></li>
+            <li><a class="tricky" onmouseenter="See('.b2b4')" onmouseleave="Unsee('.b2b4')" href="">
+            4. b4🚫<br>에반스 갬빗<br>Evans Gabit<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        지우코 피아노는 투 나이트 디펜스와 함께 이탈리안 게임을 양분하는 오프닝입니다.
+        투 나이트 디펜스의 메인 라인은 흑이 폰 하나를 지는 대신 전개 우위를 가지는데,
+        갬빗을 싫어하는 사람은 흑으로 이탈리안 게임을 상대할 때 이 오프닝이 유용하겠죠.</p>
+        <p>
+        갬빗을 제외하면 c3의 클래시컬 바리에이션과 d3의 지우코 피아니시모로 나누어지지만 
+        지우코 피아니시모도 c3 이후 d3를 하는 것이 현재 정수로 받아들여져
+        대부분의 게임에서는 c3가 두어지며, 이후 흑의 정석적 대응은 Nf6로 e4를 공격하는 것입니다.
+        </p>
+    </p></div>
+</div></body>
+
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="ClsdG.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>
+        <h2>퀸스 갬빗</h2>
+        <h3>Queen's Gambit</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu e7e6" marker-end="url(#Haccu)" x1="4" y1="1.3" x2="4" y2="1.7"></line>
+                <line class="line accu c7c6" marker-end="url(#Haccu)" x1="2" y1="1.3" x2="2" y2="1.7"></line>
+                <line class="line good d5c4" marker-end="url(#Hgood)" x1="2.79" y1="3.21" x2="2.21" y2="3.79"></line>
+                <line class="line good b8c6" marker-end="url(#Hgood)" x1="1.13" y1="0.27" x2="1.87" y2="1.73"></line>
+                <line class="line tricky e7e5" marker-end="url(#Htricky)" x1="4" y1="1.3" x2="4" y2="2.7"></line>
+                <line class="line common c8f5" marker-end="url(#Hcommon)" x1="2.21" y1="0.21" x2="4.79" y2="2.79"></line>
+                <line class="line common g8f6" marker-end="url(#Hcommon)" x1="5.87" y1="0.27" x2="5.13" y2="1.73"></line>
+                <line class="line common c7c5" marker-end="url(#Hcommon)" x1="2" y1="1.3" x2="2" y2="2.7"></line>
+                <line class="line common g7g6" marker-end="url(#Hcommon)" x1="6" y1="1.3" x2="6" y2="1.7"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="lightx"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. d4 d5<br>
+        2. c4
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        흑의 2번째 수:
+        <ul style="padding-left: 20px;">
+            <li><a class="accu" onmouseenter="See('.e7e6')" onmouseleave="Unsee('.e7e6')" href="QGD.html">
+            2...e6<br>-거절<br>-Declined<br><br></a></li>
+            <li><a class="accu" onmouseenter="See('.c7c6')" onmouseleave="Unsee('.c7c6')" href="">
+            2... c6🚫<br>슬라브 디펜스<br>Slav Defense<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.d5c4')" onmouseleave="Unsee('.d5c4')" href="">
+            2... dxc4🚫<br>-수락<br>-Accepted<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.b8c6')" onmouseleave="Unsee('.b8c6')" href="">
+            2... Nc6🚫<br>치고린 디펜스<br>Chigorin Defense<br><br></a></li>
+            <li><a class="tricky" onmouseenter="See('.e7e5')" onmouseleave="Unsee('.e7e5')" href="">
+            2... e5🚫<br>알빈 카운터갬빗<br>Albin Countergambit<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.c8f5')" onmouseleave="Unsee('.c8f5')" href="">
+            2... Bf5🚫<br>발틱 디펜스<br>Baltic Defense<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.g8f6')" onmouseleave="Unsee('.g8f6')" href="">
+            2... Nf6🚫<br>마셜 디펜스<br>Marshall Defense<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.c7c5')" onmouseleave="Unsee('.c7c5')" href="">
+            2... c5🚫<br>-거절: 오스트리안 바리에이션<br>-Declined: Austrian Variation<br><br></a></li>
+            <li><a class="common" onmouseenter="See('.g7g6')" onmouseleave="Unsee('.g7g6')" href="">
+            2... g6🚫<br>-거절(g6)<br>-Declined with 2...g6<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백은 중앙을 차지하기 위해 d5를 공격합니다. 
+        e4는 잡히니 c4를 둬야죠. 흑이 폰을 잡는다면 백이 쉽게 회수할 수 있고,
+        백에게 중앙을 내주며 흑에게 아니꼬운 상황으로 전개되기 때문에 폰을 잡는 경우는 많이 없지만,
+        이론을 회피하기 위해 간혹 잡기도 합니다. 그렇게까지 흑이 불리한 것은 또 아니고 말이죠.
+    </p></div>
+</div></body>
+
+</html>

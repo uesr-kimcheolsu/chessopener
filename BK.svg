@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="45" height="45">
+  
+  <g style="fill:#000;
+            stroke:#000;
+            stroke-width:1.5;"
+     transform="translate(0,0.3)">
+  <path
+    d="m 22.5, 6
+        l 0,12"
+    style= "stroke-linecap:round;"/>
+  <path
+    d="m 17.5, 11
+        l 10,0"
+    style= "stroke-linecap:round;"/>
+  <path
+    d="m 22.5, 19.5
+        c 0,0 6,-4 12,-2
+        c 0,0 5.5,4 5.5,7
+        c 0,0 2,8 -7.5,12
+        l -10,-2 z"/>
+  <path
+    d="m 22.5, 19.5
+        c 0,0 -6,-4 -12,-2
+        c 0,0 -5.5,4 -5.5,7
+        c 0,0 -2,8 7.5,12
+        l 10,-2 z"/>
+  <path
+    d="m 22.5, 15
+        l 4,4
+        l -4,4
+        l -4,-4 z"
+    style= "fill:#fff;
+            stroke:#000;
+            stroke-width:1.5;"/>
+  <path
+    d="m 22.5, 34.5
+        l 10,2
+        l 0,5
+        l -20,0
+        l 0,-5 z"/>
+  <path
+    d="m 12.5, 36.5
+        l 10,-2
+        l 10,2"
+    style= "stroke:#fff;"/>
+  </g>
+</svg>

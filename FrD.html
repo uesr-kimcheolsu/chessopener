@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>체스따개ChessOpener</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="seeing.js"></script>
+</head>
+
+<body>
+    <a href="KPO.html"><img src="back.svg" class="image1"></a>
+    <h1><a href="Main.html"><img src="chessopener.gif" style="width: 200px;">ChessOpener</a></h1>
+<div id="grid">
+    <div>  
+        <h2>프렌치 디펜스</h2>
+        <h3>French Defense</h3>
+        <div style="position: relative;">
+            <svg width="400" height="400" viewBox="-0.52 -0.52 8 8" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index: 1;">
+                <defs><!--화살촉-->
+                    <marker id="Haccu" orient="auto" overflow="visible"><polygon class="accu" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hgood" orient="auto" overflow="visible"><polygon class="good" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hcommon" orient="auto" overflow="visible"><polygon class="common" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Htricky" orient="auto" overflow="visible"><polygon class="tricky" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                    <marker id="Hbad" orient="auto" overflow="visible"><polygon class="bad" points="0 -0.5, 1 0, 0 0.5"/></marker>
+                </defs>
+                <line class="line accu d2d4" marker-end="url(#Haccu)" x1="3" y1="5.7" x2="3" y2="4.3"></line>
+                <line class="line good g1f3" marker-end="url(#Hgood)" x1="5.87" y1="6.73" x2="5.13" y2="5.27"></line>
+                <line class="line good d2d3" marker-end="url(#Hgood)" x1="3" y1="5.7" x2="3" y2="5.3"></line>
+                <line class="line good b1c3" marker-end="url(#Hgood)" x1="1.13" y1="6.73" x2="1.87" y2="5.27"></line>
+                <line class="line common" marker-end="url(#Hcommon)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line tricky" marker-end="url(#Htricky)" x1="9" y1="9" x2="9" y2="9"></line>
+                <line class="line bad" marker-end="url(#Hbad)" x1="9" y1="9" x2="9" y2="9"></line>
+            </svg>
+            <table>
+                <tr><th class="light"><img src="BR.svg"></th>
+                    <th class="dark"><img src="BN.svg"></th>
+                    <th class="light"><img src="BB.svg"></th>
+                    <th class="dark"><img src="BQ.svg"></th>
+                    <th class="light"><img src="BK.svg"></th>
+                    <th class="dark"><img src="BB.svg"></th>
+                    <th class="light"><img src="BN.svg"></th>
+                    <th class="dark"><img src="BR.svg"></th></tr>
+                <tr><th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="darkx"></th>
+                    <th class="light"><img src="B.svg"></th>
+                    <th class="dark"><img src="B.svg"></th>
+                    <th class="light"><img src="B.svg"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="lightx"><img src="B.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th></tr>
+                <tr><th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th>
+                    <th class="dark"></th>
+                    <th class="light"></th></tr>
+                <tr><th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"></th>
+                    <th class="dark"><img src="W.svg"></th>
+                    <th class="light"><img src="W.svg"></th>
+                    <th class="dark"><img src="W.svg"></th></tr>
+                <tr><th class="dark"><img src="WR.svg"></th>
+                    <th class="light"><img src="WN.svg"></th>
+                    <th class="dark"><img src="WB.svg"></th>
+                    <th class="light"><img src="WQ.svg"></th>
+                    <th class="dark"><img src="WK.svg"></th>
+                    <th class="light"><img src="WB.svg"></th>
+                    <th class="dark"><img src="WN.svg"></th>
+                    <th class="light"><img src="WR.svg"></th></tr>
+            </table>
+        </div>
+        <h4>
+        1. e4 e6
+        </h4>
+    </div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        백의 가능한 두 번째 수입니다:
+        <ul style="padding-left:20px;">
+            <li><a class="accu" onmouseenter="See('.d2d4')" onmouseleave="Unsee('.d2d4')" href="FrD Nrml.html">
+            2. d4<br>: 노말 바리에이션<br>: Normal Variation<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.g1f3')" onmouseleave="Unsee('.g1f3')" href="">
+            2. Nf3🚫<br>: 나이트 바리에이션<br>: Knight Variation<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.d2d3')" onmouseleave="Unsee('.d2d3')" href="">
+            2. d3🚫<br>킹스 인디언 어택<br>King's Indian Attack<br><br></a></li>
+            <li><a class="good" onmouseenter="See('.b1c3')" onmouseleave="Unsee('.b1c3')" href="">
+            2. Nc3🚫<br>: 퀸스 나이트 바리에이션<br>: Queen's Knight Variation<br><br></a></li>
+            <li><a class="common" href="">
+            2. f4🚫<br>: 라 부르도네 바리에이션<br>: La Bourdonnais Variation<br><br></a></li>
+            <li><a class="common" href="">
+            2. c4🚫<br>슈타이너 바리에이션<br>: Steiner Variation<br><br></a></li>
+            <li><a class="common" href="">
+            2. Qe2🚫<br>: 치고린 바리에이션<br>: Chigoroin Variation<br><br></a></li>
+            <li><a class="common" href="">
+            2. b3🚫<br>호르비츠 어택<br>Horwitz Attack<br><br></a></li>
+            <li><a class="bad" href="">
+            2. Bc4🚫<br>-<br>NN<br><br></a></li><!--d5 3.exd5 exd5 4.Bb3 이후 흑백이 바뀐 듯함-->
+            <li><a class="bad" href="">
+            2. e5🚫<br>슈타이니츠 어택<br>Steinitz Attack<br><br></a></li>
+            <li><a class="common" href="">
+            2. g3🚫<br>레티 스필만 어택<br>Réti-Spielmann Attack<br><br></a></li>
+        </ul>
+    </p></div>
+    <div id="wall"></div>
+    <div class="scroll"><p>
+        <p>
+        프렌치 디펜스의 주 아이디어는 d5 전진입니다.
+        이후 c5로 폰브레이크를 하며 d4로의 공격 주도권을 가지죠.
+        그러나 자신의 e폰에 막혀 밝은 색 비숍을 전개하기 힘들다는 단점이 있습니다.</p>
+        <p>
+        백의 정수는 당연하게도 중앙을 강하게 잡는 2.d4입니다.
+        </p>
+    </p></div>
+</div></body>
+
+</html>
