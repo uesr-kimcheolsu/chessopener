@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>채팅 앱</title>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="/chessopener/js/chat.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="user-container">대화명 : <input type="text" id="nickname" /></div>
+    <div class="display-container">
+      <ul class="chatting-list">
+        <!-- 채팅 메시지가 li로 추가될 것 -->
+      </ul>
+    </div>
+    <div class="input-container">
+      <input type="text" class="chatting-input" />
+      <button class="send-button">전송</button>
+    </div>
+  </div>
+</body>
+</html>
