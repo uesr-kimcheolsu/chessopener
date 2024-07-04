@@ -3,6 +3,13 @@ body {  background-color:black;
         color:white;}
 a { color:white;
     text-decoration:none;}
+svg {   position: absolute;
+        z-index: 1;}
+.line { stroke-width: 0.15;
+        stroke-linecap: round;
+        opacity: 0.4;
+        position: relative;
+        z-index: 1;}
 .accu { color:#0ad;
         fill:#0ad;
         stroke:#0ad;}
@@ -24,9 +31,6 @@ a { color:white;
 .lightx {background-color:#ed7;}
 .darkc {background-color:#b55;}
 .lightc {background-color:#e87;}
-.line { stroke-width: 0.15;
-        stroke-linecap: round;
-        opacity: 0.4;}
 h1 {border-bottom: 5px solid white;
     padding: 15px;
     padding-top: 0px;

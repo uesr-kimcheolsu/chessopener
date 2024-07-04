@@ -1,0 +1,15 @@
+body {  background-color:black;
+    color:white;}
+/* 선택자를 사용하여 특정 ID에 대한 스타일 설정 */
+#chat-room-select {
+    font-size: 24px; /*글꼴 크기*/
+    width: 300px; /*너비*/
+    padding: 10px; /*내부 여백*/
+    margin: 20px; /*외부 여백*/
+    background-color:black;
+    color:white;
+}
+.message-list {
+    overflow: auto;
+    height: calc(100vh - 332px);
+}

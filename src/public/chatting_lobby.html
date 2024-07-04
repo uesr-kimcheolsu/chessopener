@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting Lobby</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS -->
+</head>
+<body>
+    <!-- 채팅방 선택 UI -->
+    <header class="room-selector">
+        <select id="chat-room-select">
+            <option value="0">0. Lobby</option>
+            <option value="1">1. Fr. Adv</option>
+            <option value="2">2. London</option>
+            <option value="3">3. Sicilian Najdorf</option>
+            <!-- 필요한 만큼 옵션 추가 -->
+        </select>
+    </header>
+
+    <!-- 로그인 폼 -->
+    <div class="login-form" id="login-form">
+        <div><label for="nickname">Login-Nickname:</label>
+        <input type="text" id="nickname" name="nickname"></div>
+        <div><label for="password">Login-Password:</label>
+        <input type="password" id="password" name="password"></div>
+    </div>
+
+    <!-- 회원가입 폼 -->
+    <div class="signup-form" id="signup-form" style="display: none;">
+        <div><label for="signup-nickname">Signup-Nickname:</label>
+        <input type="text" id="signup-nickname" name="signup-nickname"></div>
+        <div><label for="signup-password">Signup-Password:</label>
+        <input type="password" id="signup-password" name="signup-password"></div>
+        <div><label for="signup-confirm-password">Signup-Confirm Password:</label>
+        <input type="password" id="signup-confirm-password" name="signup-confirm-password"></div>
+    </div>
+
+    <div>
+    <button id="login-btn">Login</button><!-- 로그인 버튼 -->
+    <button id="logout-btn" style="display: none;">Logout</button><!-- 로그아웃 버튼 -->
+    <button id="signup-btn">Sign Up</button><!-- 회원가입 버튼 -->
+    </div>
+
+    <!-- 방의 이름 -->
+    <h3 id="room-name">이곳은 로비입니다. admin 이외에는 글을 작성할 수 없으며, 주로 공지사항이 올라옵니다.</h3>
+    <!-- 채팅 창 -->
+    <div id="chat-area">
+        <!-- 메시지 리스트 -->
+        <div class="message-list">
+            <ul id="messages">
+                <!-- 메시지 동적 추가 -->
+            </ul>
+        </div>
+        <!-- 메시지 입력 폼 -->
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button id="send-message-btn" style="display: none;">Send</button>
+    </div>
+    <script src="script.js"></script> <!-- JavaScript -->
+</body>
+</html>
